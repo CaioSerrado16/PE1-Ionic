@@ -1,25 +1,20 @@
 <ion-content>
 
-  <div id="logo-div">
-      <ion-text color = "medium">
-        <img src="../../../assets/icon/logo.jpg">
-        <h3>iFinanças</h3>
-      </ion-text>
-  </div>
+    <topo-login></topo-login>
 
-  <form [formGroup]="loginForm" (submit)="login()">
-      <ion-item>
-          <ion-icon name="mail" slot="start" color="if"></ion-icon>
-          <ion-input formControlName="email" type="email" placeholder="E-mail" autofocus="true"></ion-input>
-      </ion-item>
+    <form [formGroup]="loginForm" (submit)="login()">
+        <ion-item>
+            <ion-icon name="mail" slot="start" color="if"></ion-icon>
+            <ion-input formControlName="email" type="email" placeholder="E-mail" autofocus="true"></ion-input>
+        </ion-item>
 
-      <ion-item>
-          <ion-icon name="lock-closed" slot="start" color="if"></ion-icon>
-          <ion-input formControlName="password" type="password" placeholder="Senha"></ion-input>
-      </ion-item>
+        <ion-item>
+            <ion-icon name="lock-closed" slot="start" color="if"></ion-icon>
+            <ion-input formControlName="password" type="password" placeholder="Senha"></ion-input>
+        </ion-item>
 
-      <ion-button [disabled]="loginForm.invalid" type="submit" expand="block" color="if" fill="clear">Enviar</ion-button>
+        <ion-button [disabled]="loginForm.invalid" type="submit" expand="block" color="if" fill="clear">Enviar</ion-button>
 
-  </form><br><br>
+    </form><br><br>
 
 </ion-content>
